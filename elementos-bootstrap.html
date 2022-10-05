@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Elementos de Interés en Bootstrap</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+    <!-- se crea el jumbotron con ventana modal-->
+    <div class="conteiner">
+        <div class="bg-ligth p-5">
+            <div class="conteiner-fluid py-5">
+                <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+                <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+               <button 
+                 type="button" 
+                 class="btn btn-primary"
+                 data-bs-toggle="modal" 
+                 data-bs-target="#modal-ejemplo">
+                  Abrir ventana modal
+               </button>
+               <div class="modal fade" id="modal-ejemplo" data-bs-backdrop="static">
+                 <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Bienvenido a openBootcamp </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                         </div>
+                        <div class="modal-body">
+                            <p class="fs-5">El bootcamp gratuito que se adapta a ti</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Aceptar</button>
+                        </div>
+                     </div>
+                 </div>
+               </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- se crea un formulario de contacto -->
+    <div class="conteiner pt-4 m-5">
+        <h1 class="display-6 fw-bold">Formulario de contacto</h1>
+        <form>
+            <div class="mb-3 col-6">
+                <label class="form-label" for="nombre">Introduce tu nombre</label>
+                <input id="nombre" type="text" class="form-control" placeholder="Tu nombre" />
+            </div>
+            <div class=" mb-3 col-6">
+                <label class="form-label" for="numero">Introduce tu telefono</label>
+                <input id="numero" type="number" class="form-control" placeholder="Tu telefono" />
+            </div>
+            <div class=" mb-3 col-6">
+                <label class="form-label" for="comentario"> Introduce tu mensaje</label>
+                <textarea class="form-control" placeholder="Tu mensaje" id="comentario" style="height: 100px" ></textarea>
+            </div>
+            <button type="button" class="btn btn-primary m-2">Enviar</button>
+        </form>
+
+    </div>
+
+
+
+    <!-- se crea una tarjeta de perfil de desarrollador -->
+    <div class="conteiner py-4 m-5">
+        <h1 class="display-6 fw-bold pb-4">Tarjeta de perfil</h1>
+
+        <div class="card mb-3 col-6 " style="width: 15rem; ">
+            <div class="card-body">
+                <h5 class="card-title">Mario Fabian Camayo Caracosme</h5>
+                <p class="card-text">Soy estudiante de programacion en tecnologias de fronted y de backend para desarrollar aplicacciones web que generen soluciones informaticas.</p>
+            </div>
+            <div class="card-footer">
+                <p class="card-text">mariocamayo17@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
